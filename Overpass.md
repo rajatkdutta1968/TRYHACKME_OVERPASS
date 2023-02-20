@@ -46,7 +46,7 @@ gobuster dir -u 10.10.40.175 -w ~/SecLists/Discovery/Web-Content/directory-list-
 4. using burp tried to access /admin page, Ádministrator Logon' page appears. At this stage tried to use sql injection  but it failed!!!!.
 
 5. while analyzing burp after setting scope to TARGET_IP and also set proxy for response. Got two javascript files. (i) main.js and (ii) cookie.js
-in cookie.js , It is evident that the code checks 'Correct Credential' response. In Burp after incepting the response and modifying the response as Çorrect Credential' a redirect appears '/admin/'
+in cookie.js , It is evident that the code checks 'Correct Credential' response. In Burp after incepting the response and modifying the response as Çorrect Credential' and SesstionToken as Correct Credential a redirect appears '/admin/'
 
 after refreshing this page got ssh credential.
 
